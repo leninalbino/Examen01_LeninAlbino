@@ -36,7 +36,7 @@ public class Curso implements Serializable{
 			name = "id_malla",
 			nullable = false,
 			unique = true,
-			foreignKey = @ForeignKey(foreignKeyDefinition = "foreign key(id_malla_curricular) references mallas_curriculares (id_malla_curricular)"))
+			foreignKey = @ForeignKey(foreignKeyDefinition = "foreign key(id_malla) references malla_curriculares (id_malla)"))
 	@ManyToOne()
 	private MallaCurricular mallaCurricular;
 	
